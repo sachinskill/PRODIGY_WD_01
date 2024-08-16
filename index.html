@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STOPWATCH</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="controls">
+      <label for="countdown">Set Countdown(mm:ss):</label>
+      <input type="text" id="countdown" placeholder="e.g.,02:30">
+      <button id="set-countdown">Set</button>
+      <button id="bright-mode-toggle">Toggle bright Mode</button>
+    </div>
+    <div class="watch">
+      <div class="outer-circle">
+        <div class="inner-circle">
+          <span class="text minute">0 :</span>
+          <span class="text sec">0 :</span>
+          <span class="text msec">&nbsp;0</span>
+        </div>
+      </div>
+    </div>
+    <div class="button-wrapper">
+      <button class="button reset hidden">Reset</button>
+      <button class="button play">Play</button>
+      <button class="button lab hidden">Lap</button>
+    </div>
+    <ul class="laps"></ul>
+    <button class="lab-clear-button hidden">Clear All</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
